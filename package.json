@@ -1,0 +1,14 @@
+{
+  "name": "Stocked",
+  "version": "1.0.0",
+  "description": "Bar Stocking registration tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log(\"test\")"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
