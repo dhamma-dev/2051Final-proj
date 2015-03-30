@@ -1,0 +1,179 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="/static/stylesheets/normalize.min.css">
+        <link rel="stylesheet" href="/static/stylesheets/main.css">
+
+        <script src="javascripts/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script>
+  var socket = io();
+</script>
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">Welcome to Bar Stock</h1>
+              <!--  <nav>
+                    <ul>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                    </ul>
+                </nav> -->
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                    <header>
+                        <h1>The Bar</h1>
+                        <p>Click the bottles that you can commit to bringing to the event:</p>
+                        <div id="barStockF" >
+                            <div id="cb21f" data-id="cb21" class="cover_filter" ><img src="/static/images/covers/Slice-1.jpg" class="img-responsive"></div>
+                            <div id="cb22f" data-id="cb22" class="cover_filter" ><img src="/static/images/covers/Slice-2.jpg" class="img-responsive"></div>
+                            <div id="cb23f" data-id="cb23" class="cover_filter" ><img src="/static/images/covers/Slice-3.jpg" class="img-responsive"></div>
+                            <div id="cb24f" data-id="cb24" class="cover_filter" ><img src="/static/images/covers/Slice-4.jpg" class="img-responsive"></div>
+                            <div id="cb25f" data-id="cb25" class="cover_filter" ><img src="/static/images/covers/Slice-5.jpg" class="img-responsive"></div>
+                            <div id="cb26f" data-id="cb26" class="cover_filter" ><img src="/static/images/covers/Slice-6.jpg" class="img-responsive"></div>
+                            <div id="cb27f" data-id="cb27" class="cover_filter" ><img src="/static/images/covers/Slice-7.jpg" class="img-responsive"></div>
+                            <div id="cb28f" data-id="cb28" class="cover_filter" ><img src="/static/images/covers/Slice-8.jpg" class="img-responsive"></div>
+                            <div id="cb29f" data-id="cb29" class="cover_filter" ><img src="/static/images/covers/Slice-9.jpg" class="img-responsive"></div>
+                            <div id="cb30f" data-id="cb30" class="cover_filter" ><img src="/static/images/covers/Slice-18.jpg" class="img-responsive"></div>
+                            <div id="cb31f" data-id="cb31" class="cover_filter" ><img src="/static/images/covers/Slice-17.jpg" class="img-responsive"></div>
+                            <div id="cb32f" data-id="cb32" class="cover_filter" ><img src="/static/images/covers/Slice-16.jpg" class="img-responsive"></div>
+                            <div id="cb33f" data-id="cb33" class="cover_filter" ><img src="/static/images/covers/Slice-15.jpg" class="img-responsive"></div>
+                            <div id="cb34f" data-id="cb34" class="cover_filter" ><img src="/static/images/covers/Slice-14.jpg" class="img-responsive"></div>
+                            <div id="cb35f" data-id="cb35" class="cover_filter" ><img src="/static/images/covers/Slice-13.jpg" class="img-responsive"></div>
+                            <div id="cb36f" data-id="cb36" class="cover_filter" ><img src="/static/images/covers/Slice-12.jpg" class="img-responsive"></div>
+                            <div id="cb37f" data-id="cb37" class="cover_filter" ><img src="/static/images/covers/Slice-11.jpg" class="img-responsive"></div>
+                            <div id="cb38f" data-id="cb38" class="cover_filter" ><img src="/static/images/covers/Slice-10.jpg" class="img-responsive"></div>
+                            <br clear=both />
+
+                        </div>  
+                    </header>
+                   
+                    <footer>
+                        <h3>article footer h3</h3>
+                        <p>Lorem ipsum.</p>
+                    </footer>
+                </article>
+
+                <aside>
+                              
+                <form class="ac-custom ac-list " autocomplete="off">
+                    <h2>Booze List:</h2>
+                    <ol>
+                       <li><input id="cb21" name="cb21" type="checkbox" ><label for="cb21"><span>Becherovka</span></label></li>
+                        <li><input id="cb22" name="cb22" type="checkbox"><label for="cb22"><span>Sambuca</span></label></li>
+                        <li><input id="cb23" name="cb23" type="checkbox"><label for="cb23"><span>Irish Cream Liquer</span></label></li>
+                        <li><input id="cb24" name="cb24" type="checkbox"><label for="cb24"><span>Rum</span></label></li>
+                        <li><input id="cb25" name="cb25" type="checkbox"><label for="cb25"><span>Curicao</span></label></li>
+                        <li><input id="cb26" name="cb26" type="checkbox"><label for="cb26"><span>Amaro</span></label></li>
+                        <li><input id="cb27" name="cb27" type="checkbox"><label for="cb27"><span>Tequila</span></label></li>
+                        <li><input id="cb28" name="cb28" type="checkbox"><label for="cb28"><span>Vodka</span></label></li>
+                        <li><input id="cb29" name="cb29" type="checkbox"><label for="cb29"><span>Pernod</span></label></li>
+                        <li><input id="cb30" name="cb30" type="checkbox"><label for="cb30"><span>Bourbon</span></label></li>
+                        <li><input id="cb31" name="cb31" type="checkbox"><label for="cb31"><span>Jagermeister</span></label></li>
+                        <li><input id="cb32" name="cb32" type="checkbox"><label for="cb32"><span>Gin</span></label></li>
+                        <li><input id="cb33" name="cb33" type="checkbox"><label for="cb33"><span>Irish Whiskey</span></label></li>
+                        <li><input id="cb34" name="cb34" type="checkbox"><label for="cb34"><span>Cointreau</span></label></li>
+                        <li><input id="cb35" name="cb35" type="checkbox"><label for="cb35"><span>Cognac</span></label></li>
+                        <li><input id="cb36" name="cb36" type="checkbox"><label for="cb36"><span>Whiskey</span></label></li>
+                        <li><input id="cb37" name="cb37" type="checkbox"><label for="cb37"><span>Kahlua</span></label></li>
+                        <li><input id="cb38" name="cb38" type="checkbox"><label for="cb38"><span>Malibu</span></label></li>
+
+                    <ol>
+                </form>
+                </aside>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>footer</h3>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="/static/javascripts/main.js"></script>
+
+            <script src="/static/javascripts/svgcheckbx.js"></script>
+            <script type="text/javascript">
+            $(function(){
+                // $('#cb29').click().attr('disabled','disabled');
+                // $('#cb27').click().attr('disabled','disabled');
+                // $('#cb26').click().attr('disabled','disabled');
+                // $('#cb25').click().attr('disabled','disabled');
+                // $('#cb24').click().attr('disabled','disabled');
+                // $('#cb22').click().attr('disabled','disabled');
+                $('[name^="cb"]').click(function(){
+                    var self = $(this);
+                    var serverAction = self.hasClass("serverAction");
+                    var cbString = self.attr('id');
+                    if (self.prop('checked')){
+                        $('#'+cbString+"f").fadeTo(300, 1);
+                        if(!serverAction){socket.emit('uncheck', cbString)};
+                    }else{
+                        $('#'+cbString+"f").fadeTo(300, 0);
+                        if(!serverAction){socket.emit('check', cbString)};
+                    }
+                    self.removeClass('serverAction');
+                });
+
+
+                 socket.on('first_load', function(msg){
+                    for (var key in msg) {
+                      if(msg.hasOwnProperty(key)) {
+                        if(msg[key] && !$('#'+key).prop('checked')){
+                            $('#'+key).click();}
+                        }
+                        if(!msg[key] && $('#'+key).prop('checked')){
+                            $('#'+key).click();}
+                      }
+                    });
+
+                socket.on('check', function(msg){
+                    var $bar = $('#'+msg);
+                    if($bar.prop('checked')){
+                    $bar.addClass('serverAction');
+                    $bar.click();}
+                  });
+
+                socket.on('uncheck', function(msg){
+                    var $bar = $('#'+msg);
+                    if(!$bar.prop('checked')){
+                    $bar.addClass('serverAction');
+                    $bar.click();}
+                  });
+
+                $('.cover_filter').click(function(){
+                    $("#"+$(this).attr('data-id')).click();
+
+                });
+
+
+
+            })
+            </script>
+
+    </body>
+</html>
